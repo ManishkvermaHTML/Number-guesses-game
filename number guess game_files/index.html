@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> number guess game</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&family=Hind+Siliguri&family=Koulen&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/number guess game_files/style.css">
+
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+
+<body onload="randome_number_generator();">
+    <main>
+        <!-- welcomeScreen area  -->
+        <div id="welcomeScreen">
+            <h3>Guess The Random Number Between 0 - 100</h3>
+            <img class="image" src="/image/download (2).jpg" alt="image">
+            <section class="levelSelection">
+                <h3>Select The Difficulty</h3>
+                <div class="buttonWrapper">
+                    <button onclick="easyMode()">Easy: 08 Attempt</button>
+                    <button onclick="hardMode()">Hard: 05 Attempt</button>
+                </div>
+            </section>
+        </div>
+
+        <!--actual game section -->
+
+
+
+        <div id="gameArea">
+            <div id="newgameButton">
+                <button onclick="newGameBegin()">New Game</button>
+            </div>
+            <section>
+                <h3 id="yourGuess">Your Guess</h3>
+                <input type="number" id="inputText" min="1" max="100" placeholder="Enter No Guess"
+                    onchange="compareGuess()" />
+            </section>
+
+            <section class="status">
+                <div class="info">
+                    <p>Number of previous attempts</p>
+                    <p class="para" id="attemps">0</p>
+                </div>
+                <div class="info">
+                    <p>Number of previous guesses</p>
+                    <p class="para" id="guesses">0</p>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

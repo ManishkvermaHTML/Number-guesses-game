@@ -1,0 +1,145 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body reset  */
+body {
+    font-family: 'Baloo Paaji 2', cursive;
+    width: 100vw;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* css variable */
+:root {
+    --bg: #e3dbd7;
+    --dark: #350363;
+    --green: #83e1d0;
+}
+
+/* html reset  */
+html {
+    font-size: 62.5%;
+    font-family: "montserrat", sans-serif;
+}
+
+
+/* main section css */
+main {
+    width: 40vw;
+    /* height: 95vh; */
+    text-align: center;
+    background-color: var(--bg);
+    border: 0.8rem solid var(--dark);
+    border-radius: 1rem 4.5rem;
+    padding: 2rem 2rem;
+    color: #1f2933;
+}
+
+/* h3 css */
+h2 {
+    font-size: 2.2rem;
+    margin: 2px;
+}
+
+/* h3 css */
+h3 {
+    font-size: 3rem;
+}
+
+/* paragraph css */
+p {
+    font-size: 1.8rem;
+}
+
+/* game front page image  */
+.image {
+    width: 90%;
+    max-height: 20rem;
+    height: auto;
+    margin: 1rem 0rem 1rem 0rem;
+    border: 2px solid var(--dark);
+}
+
+
+/* button css */
+.buttonWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0px;
+    margin: 5px;
+    flex-direction: column;
+    margin: 5px 50px;
+}
+
+.buttonWrapper button {
+    padding: 5px;
+    margin: 5px 50px;
+    cursor: pointer;
+   background-image: linear-gradient(var(--green), rgb(77, 5, 122));
+}
+.buttonWrapper button:hover{
+    background-image: linear-gradient(#323d4a,rgb(48, 7, 74));
+    color: white;
+    font-weight: bolder   ;
+}
+
+/* new game button css */
+#newgameButton {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 5px;
+    flex-direction: column;
+    margin: 5px 50px;
+}
+
+#newgameButton button {
+    padding: 5px 50px;
+    margin: 15px 10px;
+    border-radius: 22px;
+    background-color: var(--green);
+    border-top: (0px) (2px solid var(--dark)) (2px solid var(--dark)) (0px);
+
+    /* border-right: 2px solid var(--dark);
+    border-bottom: 2px solid var(--dark);
+    border-left:0px; */
+    cursor: pointer;
+}
+
+#newgameButton button:hover {
+    text-decoration: none;
+    background-image: linear-gradient(var(--green), blue);
+    border: 0px;
+    box-shadow: 3px 3px 0px blue;
+}
+
+
+/* our game area  */
+#gameArea {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 5rem 5rem 15rem 5rem;
+
+}
+#inputText{
+    margin: 1rem;
+    width: 15rem;
+    padding: 1rem;
+    border: 2px solid black;
+}
+#gameArea .status .info{
+    margin: .3rem 0rem;
+    padding: 0.5rem;
+}
+#gameArea .status .info .para{
+    padding: 0.5rem;
+    border: 1px dotted black;
+    margin: 1rem 5rem;
+}
